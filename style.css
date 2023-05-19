@@ -14,8 +14,8 @@ body {
   --logo-input__color: #222731;
   --user-name__color: #2b3442;
   --box-shadow: rgba(70, 96, 187, 0.198567);
-  --active--address:#4b6a9b;
-  --passive--address:#5d769d;
+  --active--address: #4b6a9b;
+  --passive--address: #5d769d;
 }
 
 .dark-mode {
@@ -26,8 +26,8 @@ body {
   --logo-input__color: white;
   --user-name__color: white;
   --box-shadow: rgba(70, 95, 187, 0);
-  --active--address:white;
-  --passive--address:rgba(255, 255, 255, 0.625);
+  --active--address: white;
+  --passive--address: rgba(255, 255, 255, 0.625);
 }
 
 .container {
@@ -52,7 +52,7 @@ body {
   cursor: pointer;
 }
 
-.tema-div {
+.mode--container {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -116,6 +116,8 @@ body {
   font-size: 18px;
   line-height: 25px;
   color: var(--text-color);
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .filter--form__error-msg {
@@ -275,6 +277,10 @@ body {
 }
 .address-icon--passive {
   fill: var(--passive--address);
+}
+
+.hidden {
+  display: none;
 }
 
 @media screen and (max-width: 1000px) {
