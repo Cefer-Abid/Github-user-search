@@ -3,6 +3,16 @@ class ContentView {
   containerUsers = document.querySelector(".container__users");
   errorLabel = document.querySelector(".filter--form__error-msg");
 
+  constructor() {
+    this.addHandlerFocusInput();
+  }
+
+  addHandlerFocusInput() {
+    window.addEventListener("load", function () {
+      document.querySelector(".filter--input").focus();
+    });
+  }
+
   displayError(msg = "No results") {
     this.errorLabel.textContent = msg;
   }

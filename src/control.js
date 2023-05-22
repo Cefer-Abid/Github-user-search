@@ -2,8 +2,6 @@ import * as model from "./model.js";
 import headerView from "./view/headerView.js";
 import contentView from "./view/contentView.js";
 
-// input.focus();
-
 const controlDarkMode = function () {
   // Update dark mode status
   model.toggleDarkMode();

@@ -1,4 +1,4 @@
-import { getUserDate } from "./helper.js"
+import { getUserDate } from "./helper.js";
 
 export const state = {
   darkMode: false,

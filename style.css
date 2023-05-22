@@ -16,6 +16,7 @@ body {
   --box-shadow: rgba(70, 96, 187, 0.198567);
   --active--address: #4b6a9b;
   --passive--address: #5d769d;
+  --hover--mode: #222731;
 }
 
 .dark-mode {
@@ -28,6 +29,7 @@ body {
   --box-shadow: rgba(70, 95, 187, 0);
   --active--address: white;
   --passive--address: rgba(255, 255, 255, 0.625);
+  --hover--mode: #90a4d4;
 }
 
 .container {
@@ -58,7 +60,7 @@ body {
   gap: 10px;
 }
 
-.tema--text {
+.mode--text {
   font-family: "Space Mono";
   font-weight: 700;
   font-size: 13px;
@@ -68,9 +70,12 @@ body {
   cursor: pointer;
 }
 
-.tema--icon {
-  user-select: none;
-  cursor: pointer;
+.hover__mode--text {
+  color: var(--hover--mode);
+}
+
+.hover__mode--icon {
+  fill: var(--hover--mode);
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   Filter   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -108,6 +113,7 @@ body {
   outline: none;
   display: flex;
   cursor: pointer;
+  caret-color: #0079ff;
 }
 
 .filter--input::placeholder {
@@ -116,9 +122,11 @@ body {
   font-size: 18px;
   line-height: 25px;
   color: var(--text-color);
-  white-space: nowrap;
-  overflow: hidden;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
 }
+
 
 .filter--form__error-msg {
   /* width: ; */
@@ -141,6 +149,12 @@ body {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+}
+.btn-search:hover {
+  background: #60abff;
+}
+.btn-search:active {
+  background: #0079ff;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   Users Section   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
